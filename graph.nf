@@ -29,7 +29,8 @@ process sdsplit {
 /* Builds the graph for each part
 */
 process graph {
-
+	
+	errorStrategy 'retry'
 	container 'abradle/fragalysis'
 
 	input:
